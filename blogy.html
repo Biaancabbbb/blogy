@@ -1,0 +1,286 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>★ Meu Mundo Online ★</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<style>
+    
+/* ESTILO RETRÔ ANOS 2000 */
+
+body {
+    background-color: #e8d9f5;
+    background-image: radial-gradient(#f6a6b2 1px, transparent 1px);
+    background-size: 12px 12px;
+    font-family: Verdana, Arial, sans-serif;
+    color: #f6a6b2;
+    margin: 0;
+}
+
+/* CONTAINER */
+.container {
+    width: 850px;
+    margin: 30px auto;
+    background-color: #fffaff;
+    border: 4px ridge #f6a6b2;
+    padding: 10px;
+}
+
+/* CABEÇALHO */
+header {
+    background: linear-gradient(#f6a6d7, hsl(327, 100%, 90%));
+    text-align: center;
+    padding: 25px;
+    border: 3px outset #ffa9db;
+}
+
+header h1 {
+    font-size: 30px;
+    color: white;
+    text-shadow: 2px 2px #db1b91;
+}
+
+header p {
+    color: #ffffff;
+    font-size: 13px;
+}
+
+/* MENU */
+nav {
+    background-color: #ff9fe2;
+    padding: 12px;
+    text-align: center;
+    margin-top: 10px;
+    border: 2px groove #ff48c8;
+}
+
+nav a {
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #ff3399;
+    text-decoration: underline;
+}
+
+/* CONTEÚDO */
+.conteudo {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+/* LATERAL */
+aside {
+    width: 220px;
+    flex-shrink: 0;
+}
+
+.caixa {
+    background-color: #ffddee;
+    border: 2px dotted #ff70bf;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 12px;
+}
+
+.caixa h3 {
+    background-color: #c92672;
+    color: white;
+    text-align: center;
+    padding: 7px;
+    margin-top: 0;
+}
+
+.caixa a {
+    display: block;
+    color: #ff6598;
+    text-decoration: none;
+    margin: 8px 0;
+}
+
+/* POSTAGENS */
+main {
+    flex: 1;
+    min-width: 0;
+}
+
+.post {
+    background-color: white;
+    border: 2px solid #ffb3d6;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 3px 3px #ffcce8;
+}
+
+.post h2 {
+    color: #ff5bad;
+    font-size: 18px;
+}
+
+.post small {
+    color: #8f7b84;
+}
+
+.post hr {
+    border: 0;
+    border-top: 1px dashed #ff99dd;
+}
+
+.post p {
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+.post li {
+    font-size: 13px;
+    margin: 5px;
+}
+
+.comentario {
+    color: #cc66cc;
+    border-top: 1px dotted #cc99ff;
+    padding-top: 10px;
+}
+
+/* RODAPÉ */
+footer {
+    background-color: #eebbdf;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 10px;
+    font-size: 11px;
+}
+
+/* CELULAR */
+@media (max-width: 700px) {
+
+    .container {
+        width: auto;
+        margin: 10px;
+    }
+
+    .conteudo {
+        flex-direction: column;
+    }
+
+    aside {
+        width: auto;
+    }
+
+    header h1 {
+        font-size: 22px;
+    }
+}
+
+</style>
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>★ MEU MUNDO ONLINE ★</h1>
+            <p>~*~ Bem-vindo ao meu cantinho da internet! ~*~</p>
+        </header>
+
+        <nav>
+            <a href="#">HOME</a> |
+            <a href="#">SOBRE MIM</a> |
+            <a href="#">BLOG</a> |
+            <a href="#">CONTATO</a>
+        </nav>
+
+        <div class="conteudo">
+
+            <aside>
+                <div class="caixa">
+                    <h3>♡ SOBRE MIM ♡</h3>
+                    <p>Olá! Seja bem-vindo ao meu blog!</p>
+                    <p>Adoro música, internet e escrever!</p>
+                </div>
+
+                <div class="caixa">
+                    <h3>MENU</h3>
+                    <a href="#">» Minha história</a>
+                    <a href="#">» Fotos</a>
+                    <a href="#">» Músicas</a>
+                    <a href="#">» Diário</a>
+                </div>
+
+                <div class="caixa">
+                    <h3>STATUS</h3>
+                    <p>♡ Ouvindo: Pop 2000s</p>
+                    <p>♡ Humor: Feliz!</p>
+                    <p>♡ Online: SIM</p>
+                </div>
+
+                <div class="caixa">
+                    <h3>VISITANTES</h3>
+                    <p>000123 visitantes</p>
+                </div>
+            </aside>
+
+            <main>
+
+                <article class="post">
+                    <h2>★ Bem-vindos ao meu blog!</h2>
+                    <small>Publicado em 11/11/2026</small>
+                    <hr>
+                    <p>
+                        Oii gente!! Tudo bem com vocês?
+                        Esse é meu cantinho pessoal na internet!
+                        Aqui vou postar sobre minha vida,
+                        músicas, fotos e várias outras coisas.
+                    </p>
+                    <p>Espero que gostem!! ♥</p>
+                    <p class="comentario">♡ 5 comentários | Comentar</p>
+                </article>
+
+                <article class="post">
+                    <h2>♪ Minhas músicas favoritas</h2>
+                    <small>Publicado em 10/11/2026</small>
+                    <hr>
+                    <p>
+                        Estou viciado(a) nas músicas dos anos 2000!
+                        Essa época tem as melhores músicas.
+                    </p>
+                    <ul>
+                        <li>Pop internacional</li>
+                        <li>Rock alternativo</li>
+                        <li>Emo e indie</li>
+                    </ul>
+                    <p class="comentario">♡ 12 comentários | Comentar</p>
+                </article>
+
+                <article class="post">
+                    <h2>♡ Um pouco sobre mim</h2>
+                    <small>Publicado em 09/11/2026</small>
+                    <hr>
+                    <p>
+                        Amo personalizar meu blog, conhecer
+                        pessoas novas e passar horas na internet.
+                        Obrigado por visitar minha página!
+                    </p>
+                    <p class="comentario">♡ 3 comentários | Comentar</p>
+                </article>
+
+            </main>
+
+        </div>
+
+        <footer>
+            <p>★ Feito com amor em 2026 ★</p>
+            <p>© Meu Mundo Online - Todos os direitos reservados</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
